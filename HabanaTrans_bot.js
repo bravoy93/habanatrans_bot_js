@@ -1,6 +1,6 @@
 // import {commandsList} from "./src/commands";
-// const Telegraf = require('telegraf');
-const { Composer, Stage, Scene, session } = require('micro-bot')
+const Telegraf = require('telegraf');
+// const { Composer, Stage, Scene, session } = require('micro-bot')
 const Extra = require('telegraf/extra')
 const Markup = require('telegraf/markup')
 // process.env.BOT_TOKEN = '1328704286:AAERXRqYWA1AaZ6OxGMf8a_j_qFV8j9URu8';
@@ -10,8 +10,8 @@ const keyboard = Markup.inlineKeyboard([
   Markup.callbackButton('Delete', 'delete')
 ])
 
-// const habanaTrans_bot = new Telegraf(process.env.BOT_TOKEN);
-const habanaTrans_bot = new Composer();
+const habanaTrans_bot = new Telegraf(process.env.BOT_TOKEN);
+// const habanaTrans_bot = new Composer();
 
 // habanaTrans_bot.use(Telegraf.log())
 
@@ -105,5 +105,5 @@ habanaTrans_bot.hears('👥 Comparte', (ctx) =>{
   ctx.reply('Accion de compartir con otros user de Telegram')});
 
 
-// habanaTrans_bot.launch();
-module.exports = habanaTrans_bot;
+habanaTrans_bot.launch();
+// module.exports = habanaTrans_bot;
