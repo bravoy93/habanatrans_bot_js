@@ -1,9 +1,7 @@
 // import {commandsList} from "./src/commands";
 const Telegraf = require('telegraf');
-// const { Composer, Stage, Scene, session } = require('micro-bot')
 const Extra = require('telegraf/extra')
 const Markup = require('telegraf/markup')
-// process.env.BOT_TOKEN = '1328704286:AAERXRqYWA1AaZ6OxGMf8a_j_qFV8j9URu8';
 
 const keyboard = Markup.inlineKeyboard([
   Markup.urlButton('❤️', 'http://www.habanatrans.com'),
@@ -40,6 +38,7 @@ habanaTrans_bot.help(async (ctx) => {
 
 /* Comandos personalizados */
 
+// correr este comando cuando se modifican los comandos existentes y no se vea el cambio en produccion
 habanaTrans_bot.command('updateCommands', async (ctx) => {
   await ctx.setMyCommands([
     {
