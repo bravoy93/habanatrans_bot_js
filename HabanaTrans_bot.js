@@ -1,12 +1,12 @@
 // import {commandsList} from "./src/commands";
 const Telegraf = require('telegraf');
-const Extra = require('telegraf/extra')
-const Markup = require('telegraf/markup')
+const Extra = require('telegraf/extra');
+const Markup = require('telegraf/markup');
 
 const keyboard = Markup.inlineKeyboard([
   Markup.urlButton('❤️', 'http://www.habanatrans.com'),
   Markup.callbackButton('Delete', 'delete')
-])
+]);
 
 const habanaTrans_bot = new Telegraf(process.env.BOT_TOKEN);
 // const habanaTrans_bot = new Composer();
@@ -105,4 +105,3 @@ habanaTrans_bot.hears('👥 Comparte', (ctx) =>{
 
 
 habanaTrans_bot.launch();
-// module.exports = habanaTrans_bot;
