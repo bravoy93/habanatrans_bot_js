@@ -1,1 +1,1 @@
-web: node HabanaTrans_bot.js -p $PORT
+web: node HabanaTrans_bot.js -p PORT
