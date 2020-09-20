@@ -1,1 +1,1 @@
-web: node HabanaTrans_bot.js -p PORT
+worker: node HabanaTrans_bot.js
