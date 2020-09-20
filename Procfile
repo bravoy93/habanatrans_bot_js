@@ -1,1 +1,1 @@
-worker: node HabanaTrans_bot.js
+web: node HabanaTrans_bot.js -p 8000
