@@ -1,1 +1,1 @@
-web: node HabanaTrans_bot.js -p 8000
+web: node HabanaTrans_bot.js -p $PORT
