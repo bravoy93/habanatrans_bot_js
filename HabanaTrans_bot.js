@@ -2,6 +2,16 @@
 const Telegraf = require('telegraf');
 const Extra = require('telegraf/extra');
 const Markup = require('telegraf/markup');
+const express = require('express');
+const expressApp = express()
+
+const port = process.env.PORT || 3000;
+expressApp.get('/', (req, res) => {
+  res.send('This App is supporting HabanaTrans_bot!')
+});
+expressApp.listen(port, () => {
+  console.log(`Listening on port ${port}`)
+});
 
 const keyboard = Markup.inlineKeyboard([
   Markup.urlButton('❤️', 'http://www.habanatrans.com'),
