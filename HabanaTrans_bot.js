@@ -114,4 +114,5 @@ habanaTrans_bot.hears('👥 Comparte', (ctx) =>{
   ctx.reply('Accion de compartir con otros user de Telegram')});
 
 
-habanaTrans_bot.launch();
+// habanaTrans_bot.launch();
+habanaTrans_bot.startPolling();
