@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node HabanaTrans_bot.js",
     "dev": "nodemon HabanaTrans_bot.js",
-    "deploy": "git push heroku master"
+    "build": "echo \"App deployed!\""
   },
   "author": "bravoy93",
   "license": "MIT",
