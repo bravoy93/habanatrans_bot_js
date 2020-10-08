@@ -2,17 +2,20 @@
   "name": "habanatrans_bot",
   "version": "1.0.0",
   "description": "A bot to experiments learning about telegram bots made with js",
-  "main": "index.js",
+  "main": "functions/HabanaTrans_bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node HabanaTrans_bot.js",
     "dev": "nodemon HabanaTrans_bot.js",
-    "build": "echo \"App deployed!\""
+    "postinstall": "netlify-lambda install",
+    "buildNetlify": "netlify-lambda build functions",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devNetlify": "netlify-lambda serve functions"
   },
   "author": "bravoy93",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
+    "netlify-lambda": "^2.0.1",
     "telegraf": "^3.38.0"
   },
   "devDependencies": {
