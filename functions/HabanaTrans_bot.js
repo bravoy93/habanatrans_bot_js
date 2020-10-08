@@ -1,4 +1,4 @@
-const {commandsList} require("./src/commands");
+// const {commandsList} require("./src/commands");
 const Telegraf = require('telegraf');
 const Extra = require('telegraf/extra');
 const Markup = require('telegraf/markup');
